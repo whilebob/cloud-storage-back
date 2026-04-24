@@ -26,10 +26,10 @@ type FileService struct {
 var _ File = (*FileService)(nil)
 
 type FileDTO struct {
-	FileName   string    `json:"file_name"` // 字段名和数据库列名一致
+	FileName   string    `json:"file_name"`
 	CreateTime time.Time `json:"create_time"`
-	//MinioURL   string    `json:"minio_url"`
-	Size int64 `json:"size"`
+	Size       int64     `json:"size"`
+	IsPreview  bool      `json:"is_preview"` // 预览标识
 }
 
 func (f *FileService) Delete(c *gin.Context) {
@@ -52,7 +52,6 @@ func (f *FileService) Delete(c *gin.Context) {
 	}
 	md5 := file.Md5
 
-	//分布式锁
 	lockKey := fmt.Sprintf("%s:%s:%s", common.DeleteLockKey, username, md5)
 	locked, err := global.Redis.SetNX(ctx, lockKey, "1", 10*time.Second).Result()
 	if err != nil || !locked {
@@ -147,16 +146,43 @@ func (f *FileService) Preview(c *gin.Context) {
 }
 
 func getFiles(username string, pageNum int, pageSize int) ([]FileDTO, error) {
-	var fileDTOs []FileDTO
+	var files []model.File
 
-	err := global.DB.Model(&model.File{}).
+	err := global.DB.
 		Where("username = ? AND is_uploaded = ?", username, true).
-		Select("file_name, created_at AS create_time, size").
 		Offset((pageNum - 1) * pageSize).
 		Limit(pageSize).
-		Find(&fileDTOs).Error
+		Find(&files).Error
 
-	return fileDTOs, err
+	if err != nil {
+		return nil, err
+	}
+
+	var fileDTOs []FileDTO
+	for _, file := range files {
+		ext := strings.ToLower(filepath.Ext(file.FileName))
+		fileDTOs = append(fileDTOs, FileDTO{
+			FileName:   file.FileName,
+			CreateTime: file.CreatedAt,
+			Size:       file.Size,
+			IsPreview:  isPreviewable(ext),
+		})
+	}
+
+	return fileDTOs, nil
+}
+
+func isPreviewable(ext string) bool {
+	switch ext {
+	case ".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".svg",
+		".pdf",
+		".mp4", ".webm", ".ogg",
+		".mp3", ".wav",
+		".txt", ".md", ".json", ".xml", ".csv":
+		return true
+	default:
+		return false
+	}
 }
 
 func deleteSmallFile(username, fileName, md5 string) error {
@@ -211,7 +237,6 @@ func deleteLargeFile(username, fileName, md5 string) error {
 
 func createTempURL(username, filename string, preview bool) (string, error) {
 	ctx := context.Background()
-
 	objectName := fmt.Sprintf("%s/%s", username, filename)
 
 	disposition := "attachment"
