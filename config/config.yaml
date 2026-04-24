@@ -1,0 +1,19 @@
+mysql:
+  host: localhost
+  port: 3306
+  username: root
+  password: 123456
+  dbname: cloud_storage
+redis:
+  host: localhost
+  port: 6379
+  password: 
+  db: 0
+minio:
+  host: localhost
+  port: 9000
+  access_key: admin
+  secret_key: 12345678
+host: localhost
+port: 9000
+
