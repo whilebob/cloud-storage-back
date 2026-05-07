@@ -1,0 +1,27 @@
+mysql:
+  host: localhost
+  port: 3306
+  username: root
+  password: 123456
+  dbname: cloud_storage
+redis:
+  host: localhost
+  port: 6379
+  password:
+  db: 0
+minio:
+  host: localhost
+  port: 9000
+  access_key: admin
+  secret_key: 12345678
+server:
+  port: 3000
+  mode: release
+jwt:
+  secret: cloud_storage_jwt_secret
+  # 访问令牌过期时间（访问日常操作，如上传文件、下载文件等）
+  # 2小时
+  access_token_expires: 2
+  # 刷新令牌过期时间（刷新访问令牌，如登录后点击刷新按钮）
+  # 7天
+  refresh_token_expires: 7

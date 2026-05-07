@@ -1,0 +1,61 @@
+2026-05-07 16:42:38	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:42:38	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.001275883}
+2026-05-07 16:42:44	ERROR	middleware/gin_logger.go:30	接口请求失败	{"path": "/api/user/register", "method": "GET", "ip": "::1", "status": 404, "cost": 0.000473533, "error": ""}
+2026-05-07 16:42:44	ERROR	middleware/gin_logger.go:30	接口请求失败	{"path": "/favicon.ico", "method": "GET", "ip": "::1", "status": 404, "cost": 0.000574383, "error": ""}
+2026-05-07 16:42:50	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:42:50	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.00112383}
+2026-05-07 16:50:47	INFO	CloudStorage/main.go:21	CloudStorage 启动	{"port": ":3000"}
+2026-05-07 16:51:04	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:51:04	ERROR	handler/user_hand.go:30	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:51:04	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.017992563}
+2026-05-07 16:52:16	INFO	CloudStorage/main.go:21	CloudStorage 启动	{"port": ":3000"}
+2026-05-07 16:52:24	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:52:24	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:52:24	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.006501409}
+2026-05-07 16:53:39	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:53:39	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:53:39	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.02498874}
+2026-05-07 16:53:44	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:53:44	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:53:44	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.002024789}
+2026-05-07 16:53:45	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:53:45	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:53:45	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.002852351}
+2026-05-07 16:53:45	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:53:45	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:53:45	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.001904535}
+2026-05-07 16:53:45	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:53:45	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:53:45	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.003446285}
+2026-05-07 16:53:46	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:53:46	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:53:46	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.001907082}
+2026-05-07 16:53:46	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:53:46	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:53:46	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.002145224}
+2026-05-07 16:53:46	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:53:46	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:53:46	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.002512983}
+2026-05-07 16:54:26	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:54:26	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:54:26	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.015975751}
+2026-05-07 16:54:57	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:54:57	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:54:57	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.022322266}
+2026-05-07 16:55:05	ERROR	service/user_ser.go:31	创建用户失败	{"error": "用户名已存在"}
+2026-05-07 16:55:05	ERROR	handler/user_hand.go:31	注册失败	{"error": "用户名已存在"}
+2026-05-07 16:55:05	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.003057277}
+2026-05-07 16:55:21	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/register", "method": "POST", "ip": "::1", "status": 200, "cost": 0.065148846}
+2026-05-07 16:55:31	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/login", "method": "OPTIONS", "ip": "::1", "status": 204, "cost": 0.000021481}
+2026-05-07 16:55:31	ERROR	handler/user_hand.go:51	登录失败	{"error": "密码错误"}
+2026-05-07 16:55:31	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/login", "method": "POST", "ip": "::1", "status": 200, "cost": 0.011956154}
+2026-05-07 16:56:59	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/login", "method": "POST", "ip": "::1", "status": 200, "cost": 0.001763357}
+2026-05-07 16:57:57	INFO	CloudStorage/main.go:21	CloudStorage 启动	{"port": ":3000"}
+2026-05-07 16:58:30	ERROR	handler/user_hand.go:51	登录失败	{"error": "密码错误"}
+2026-05-07 16:58:30	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/login", "method": "POST", "ip": "::1", "status": 200, "cost": 0.016454229}
+2026-05-07 16:59:12	ERROR	handler/user_hand.go:51	登录失败	{"error": "密码错误"}
+2026-05-07 16:59:12	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/login", "method": "POST", "ip": "::1", "status": 200, "cost": 0.0144831}
+2026-05-07 17:02:28	INFO	CloudStorage/main.go:21	CloudStorage 启动	{"port": ":3000"}
+2026-05-07 17:02:38	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/login", "method": "POST", "ip": "::1", "status": 200, "cost": 0.00297689}
+2026-05-07 17:04:01	INFO	CloudStorage/main.go:21	CloudStorage 启动	{"port": ":3000"}
+2026-05-07 17:04:04	INFO	middleware/gin_logger.go:40	访问接口	{"path": "/api/user/login", "method": "POST", "ip": "::1", "status": 200, "cost": 0.002673117}
